@@ -1,0 +1,21 @@
+import os
+import shutil
+import sys
+
+env = Environment()
+
+env.Append(
+	CPPPATH = ['../include', '../include/corecg', '/usr/local/include'])
+
+env.Append(
+	LIBS = ['skia', 'cairo'])
+
+env.Append(
+	LIBPATH = ['..', '/usr/local/lib'])
+
+if env['PLATFORM'] == 'posix':
+   env.Append(
+        LINKFLAGS = ['-lpthread'])
+
+env.Program('helloworld.cpp')
+
