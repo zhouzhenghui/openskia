@@ -1,0 +1,1 @@
+This vector graphics rendering software makes highend visual effects possible on feature phones. It is tiny in size and is capable of delivering very high quality. Skia’s engine is the graphics core of both Google Android and Google Chrome.
